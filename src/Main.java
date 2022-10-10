@@ -108,3 +108,6 @@ public class Main {
         } while (i != 0);
     }
 }
+/* A contagem não é oficial e foi estimada pelo site https://sociedadejedi.com.br/2017/04/04/anakin-lidera-o-ranking-de-contagem-midi-chlorian-veja-a-lista/
+
+ */
