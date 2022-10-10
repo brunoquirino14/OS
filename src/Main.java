@@ -1,7 +1,5 @@
 import java.util.Random;
 import java.util.Scanner;
-import java.util.Arrays;
-import java.util.random.RandomGenerator;
 public class Main {
     public static int aleatoriar(int minimo, int maximo) {
         Random random = new Random();
@@ -13,7 +11,6 @@ public class Main {
         int i;
         String nome;
         int midi;
-        do {
             System.out.println("----------------------------------");
             System.out.println("Escolha uma opção:");
             System.out.println("1 - Descrição do programa");
@@ -38,7 +35,8 @@ public class Main {
                         sc.nextLine();
                     }
                     nome = sc.nextLine();
-
+                    Thread T1 = new Thread(nome);
+                    T1.start();
                     String Pega = String.valueOf(nome.charAt(0));
                     if (Pega.equals("A") || Pega.equals("F") || Pega.equals("K") || Pega.equals("P") || Pega.equals("U") || Pega.equals("Z")) {
                         midi = aleatoriar(0, 5950);
@@ -105,7 +103,7 @@ public class Main {
             }
 
 
-        } while (i != 0);
+
     }
 }
 /* A contagem não é oficial e foi estimada pelo site https://sociedadejedi.com.br/2017/04/04/anakin-lidera-o-ranking-de-contagem-midi-chlorian-veja-a-lista/
