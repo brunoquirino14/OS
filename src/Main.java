@@ -13,10 +13,10 @@ public class Main {
         int midi;
             System.out.println("----------------------------------");
             System.out.println("Escolha uma opção:");
-            System.out.println("1 - Descrição do programa");
+            System.out.println("1 - Do do programa");
             System.out.println("2 - Medição de Midi-Chlorians");
             System.out.println("0 - Sair");
-            System.out.println("----------------------------------");
+            System.out.println("-----------------------------");
             i = sc.nextInt();
             switch (i) {
                 case 0:
